@@ -1357,6 +1357,24 @@ tr:hover td {
     background-clip: text;
 }
 
+.hero .cover-whale-logo {
+    max-width: 280px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(115, 82, 168, 0.3));
+}
+
+/* Invert logo colors in dark mode for visibility */
+[data-theme="dark"] .hero .cover-whale-logo,
+:root:not([data-theme="light"]) .hero .cover-whale-logo {
+    filter: brightness(1.2) drop-shadow(0 0 20px rgba(115, 82, 168, 0.4));
+}
+
+@media (max-width: 480px) {
+    .hero .cover-whale-logo {
+        max-width: 200px;
+    }
+}
+
 .hero .subtitle {
     font-size: 1.25rem;
     color: var(--text-secondary);

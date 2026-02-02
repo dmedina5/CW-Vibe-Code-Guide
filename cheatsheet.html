@@ -140,25 +140,51 @@
 claude</code></pre>
 
                         <h4>Keyboard Shortcuts</h4>
-                        <div class="table-wrapper">
-                            <table>
-                                <tr>
-                                    <td><kbd>Escape</kbd></td>
-                                    <td>Stop action</td>
-                                </tr>
-                                <tr>
-                                    <td><kbd>Escape</kbd> x2</td>
-                                    <td>History</td>
-                                </tr>
-                                <tr>
-                                    <td><kbd>Shift+Tab</kbd></td>
-                                    <td>Plan mode</td>
-                                </tr>
-                                <tr>
-                                    <td><kbd>#</kbd></td>
-                                    <td>Update CLAUDE.md</td>
-                                </tr>
-                            </table>
+                        <!-- Platform Tabs for Claude Shortcuts -->
+                        <div class="platform-tabs" data-group="claude-shortcuts">
+                            <button class="platform-tab-btn" data-platform="windows">
+                                <span class="platform-icon">&#128187;</span> Windows
+                            </button>
+                            <button class="platform-tab-btn" data-platform="mac">
+                                <span class="platform-icon">&#127822;</span> Mac
+                            </button>
+                        </div>
+
+                        <!-- Windows Claude Shortcuts -->
+                        <div class="platform-content" data-group="claude-shortcuts" data-platform="windows">
+                            <div class="table-wrapper">
+                                <table>
+                                    <tr><td><kbd>Escape</kbd></td><td>Stop action</td></tr>
+                                    <tr><td><kbd>Escape</kbd> x2</td><td>History/Rewind</td></tr>
+                                    <tr><td><kbd>Shift+Tab</kbd></td><td>Plan mode</td></tr>
+                                    <tr><td><kbd>Alt+M</kbd></td><td>Toggle permissions</td></tr>
+                                    <tr><td><kbd>Alt+P</kbd></td><td>Switch model</td></tr>
+                                    <tr><td><kbd>Alt+T</kbd></td><td>Extended thinking</td></tr>
+                                    <tr><td><kbd>Ctrl+C</kbd></td><td>Cancel input</td></tr>
+                                    <tr><td><kbd>Ctrl+L</kbd></td><td>Clear screen</td></tr>
+                                    <tr><td><kbd>Ctrl+R</kbd></td><td>Reverse search</td></tr>
+                                    <tr><td><kbd>Up/Down</kbd></td><td>Command history</td></tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Mac Claude Shortcuts -->
+                        <div class="platform-content" data-group="claude-shortcuts" data-platform="mac">
+                            <div class="table-wrapper">
+                                <table>
+                                    <tr><td><kbd>Escape</kbd></td><td>Stop action</td></tr>
+                                    <tr><td><kbd>Escape</kbd> x2</td><td>History/Rewind</td></tr>
+                                    <tr><td><kbd>Shift+Tab</kbd></td><td>Plan mode</td></tr>
+                                    <tr><td><kbd>Option+M</kbd></td><td>Toggle permissions</td></tr>
+                                    <tr><td><kbd>Option+P</kbd></td><td>Switch model</td></tr>
+                                    <tr><td><kbd>Option+T</kbd></td><td>Extended thinking</td></tr>
+                                    <tr><td><kbd>Ctrl+C</kbd></td><td>Cancel input</td></tr>
+                                    <tr><td><kbd>Ctrl+L</kbd></td><td>Clear screen</td></tr>
+                                    <tr><td><kbd>Ctrl+R</kbd></td><td>Reverse search</td></tr>
+                                    <tr><td><kbd>Option+Enter</kbd></td><td>Multiline input</td></tr>
+                                    <tr><td><kbd>Cmd+V</kbd></td><td>Paste image (iTerm2)</td></tr>
+                                </table>
+                            </div>
                         </div>
 
                         <h4>Essential Commands</h4>
@@ -226,25 +252,51 @@ model: haiku
 gemini auth login</code></pre>
 
                         <h4>Keyboard Shortcuts</h4>
-                        <div class="table-wrapper">
-                            <table>
-                                <tr>
-                                    <td><kbd>@</kbd></td>
-                                    <td>File reference</td>
-                                </tr>
-                                <tr>
-                                    <td><kbd>Ctrl+C</kbd></td>
-                                    <td>Stop</td>
-                                </tr>
-                                <tr>
-                                    <td><kbd>Up/Down</kbd></td>
-                                    <td>History</td>
-                                </tr>
-                                <tr>
-                                    <td><kbd>Tab</kbd></td>
-                                    <td>Autocomplete</td>
-                                </tr>
-                            </table>
+                        <!-- Platform Tabs for Gemini Shortcuts -->
+                        <div class="platform-tabs" data-group="gemini-shortcuts">
+                            <button class="platform-tab-btn" data-platform="windows">
+                                <span class="platform-icon">&#128187;</span> Windows
+                            </button>
+                            <button class="platform-tab-btn" data-platform="mac">
+                                <span class="platform-icon">&#127822;</span> Mac
+                            </button>
+                        </div>
+
+                        <!-- Windows Gemini Shortcuts -->
+                        <div class="platform-content" data-group="gemini-shortcuts" data-platform="windows">
+                            <div class="table-wrapper">
+                                <table>
+                                    <tr><td><kbd>@</kbd></td><td>File reference</td></tr>
+                                    <tr><td><kbd>Ctrl+C</kbd> x2</td><td>Cancel/Quit</td></tr>
+                                    <tr><td><kbd>Escape</kbd> x2</td><td>Browse history</td></tr>
+                                    <tr><td><kbd>Shift+Tab</kbd></td><td>Auto-apply mode</td></tr>
+                                    <tr><td><kbd>Ctrl+Y</kbd></td><td>YOLO mode toggle</td></tr>
+                                    <tr><td><kbd>Ctrl+L</kbd></td><td>Clear screen</td></tr>
+                                    <tr><td><kbd>Ctrl+S</kbd></td><td>Print full response</td></tr>
+                                    <tr><td><kbd>Ctrl+T</kbd></td><td>Tool descriptions</td></tr>
+                                    <tr><td><kbd>Tab</kbd></td><td>Autocomplete</td></tr>
+                                    <tr><td><kbd>Alt+Z</kbd></td><td>Undo</td></tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Mac Gemini Shortcuts -->
+                        <div class="platform-content" data-group="gemini-shortcuts" data-platform="mac">
+                            <div class="table-wrapper">
+                                <table>
+                                    <tr><td><kbd>@</kbd></td><td>File reference</td></tr>
+                                    <tr><td><kbd>Ctrl+C</kbd> x2</td><td>Cancel/Quit</td></tr>
+                                    <tr><td><kbd>Escape</kbd> x2</td><td>Browse history</td></tr>
+                                    <tr><td><kbd>Shift+Tab</kbd></td><td>Auto-apply mode</td></tr>
+                                    <tr><td><kbd>Ctrl+Y</kbd></td><td>YOLO mode toggle</td></tr>
+                                    <tr><td><kbd>Ctrl+L</kbd></td><td>Clear screen</td></tr>
+                                    <tr><td><kbd>Ctrl+S</kbd></td><td>Print full response</td></tr>
+                                    <tr><td><kbd>Ctrl+T</kbd></td><td>Tool descriptions</td></tr>
+                                    <tr><td><kbd>Tab</kbd></td><td>Autocomplete</td></tr>
+                                    <tr><td><kbd>Cmd+Z</kbd></td><td>Undo</td></tr>
+                                    <tr><td><kbd>Option+M</kbd></td><td>Toggle Markdown</td></tr>
+                                </table>
+                            </div>
                         </div>
 
                         <h4>Essential Commands</h4>
