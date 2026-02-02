@@ -120,43 +120,158 @@
                 <div class="tab-content active" data-tab="claude">
                     <h2 id="claude-keyboard">Keyboard Shortcuts</h2>
                     <div data-skill="beginner">
-                        <div class="table-wrapper">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Shortcut</th>
-                                        <th>Action</th>
-                                        <th>Notes</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><kbd>Escape</kbd></td>
-                                        <td>Stop current action</td>
-                                        <td>Use this, NOT Ctrl+C</td>
-                                    </tr>
-                                    <tr>
-                                        <td><kbd>Escape</kbd> x2</td>
-                                        <td>Message history</td>
-                                        <td>Browse previous messages</td>
-                                    </tr>
-                                    <tr>
-                                        <td><kbd>Shift+Tab</kbd></td>
-                                        <td>Toggle plan mode</td>
-                                        <td>Think before executing</td>
-                                    </tr>
-                                    <tr>
-                                        <td><kbd>#</kbd></td>
-                                        <td>Update CLAUDE.md</td>
-                                        <td>Quick context update</td>
-                                    </tr>
-                                    <tr>
-                                        <td><kbd>Tab</kbd></td>
-                                        <td>Accept suggestion</td>
-                                        <td>In multi-line input</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <!-- Platform Tabs for Claude Shortcuts -->
+                        <div class="platform-tabs" data-group="claude-tips-shortcuts">
+                            <button class="platform-tab-btn" data-platform="windows">
+                                <span class="platform-icon">&#128187;</span> Windows
+                            </button>
+                            <button class="platform-tab-btn" data-platform="mac">
+                                <span class="platform-icon">&#127822;</span> Mac
+                            </button>
+                        </div>
+
+                        <!-- Windows Claude Shortcuts -->
+                        <div class="platform-content" data-group="claude-tips-shortcuts" data-platform="windows">
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Shortcut</th>
+                                            <th>Action</th>
+                                            <th>Notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><kbd>Escape</kbd></td>
+                                            <td>Stop current action</td>
+                                            <td>Use this, NOT Ctrl+C</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Escape</kbd> x2</td>
+                                            <td>Message history / Rewind</td>
+                                            <td>Browse previous messages</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Shift+Tab</kbd></td>
+                                            <td>Toggle plan mode</td>
+                                            <td>Think before executing</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Alt+M</kbd></td>
+                                            <td>Toggle permissions</td>
+                                            <td>Change permission mode</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Alt+P</kbd></td>
+                                            <td>Switch model</td>
+                                            <td>Change AI model</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Alt+T</kbd></td>
+                                            <td>Extended thinking</td>
+                                            <td>Toggle deep reasoning</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+L</kbd></td>
+                                            <td>Clear screen</td>
+                                            <td>Clear terminal display</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+R</kbd></td>
+                                            <td>Reverse search</td>
+                                            <td>Search command history</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>#</kbd></td>
+                                            <td>Update CLAUDE.md</td>
+                                            <td>Quick context update</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Up/Down</kbd></td>
+                                            <td>Command history</td>
+                                            <td>Navigate previous prompts</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Mac Claude Shortcuts -->
+                        <div class="platform-content" data-group="claude-tips-shortcuts" data-platform="mac">
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Shortcut</th>
+                                            <th>Action</th>
+                                            <th>Notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><kbd>Escape</kbd></td>
+                                            <td>Stop current action</td>
+                                            <td>Use this, NOT Ctrl+C</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Escape</kbd> x2</td>
+                                            <td>Message history / Rewind</td>
+                                            <td>Browse previous messages</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Shift+Tab</kbd></td>
+                                            <td>Toggle plan mode</td>
+                                            <td>Think before executing</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Option+M</kbd></td>
+                                            <td>Toggle permissions</td>
+                                            <td>Change permission mode</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Option+P</kbd></td>
+                                            <td>Switch model</td>
+                                            <td>Change AI model</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Option+T</kbd></td>
+                                            <td>Extended thinking</td>
+                                            <td>Toggle deep reasoning</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+L</kbd></td>
+                                            <td>Clear screen</td>
+                                            <td>Clear terminal display</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+R</kbd></td>
+                                            <td>Reverse search</td>
+                                            <td>Search command history</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Option+Enter</kbd></td>
+                                            <td>Multiline input</td>
+                                            <td>Enter new line in prompt</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Cmd+V</kbd></td>
+                                            <td>Paste image</td>
+                                            <td>In iTerm2</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>#</kbd></td>
+                                            <td>Update CLAUDE.md</td>
+                                            <td>Quick context update</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Up/Down</kbd></td>
+                                            <td>Command history</td>
+                                            <td>Navigate previous prompts</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
                         <div class="callout warning">
@@ -394,38 +509,163 @@ Show me the changes before applying."</code></pre>
                 <div class="tab-content" data-tab="gemini">
                     <h2 id="gemini-keyboard">Keyboard Shortcuts</h2>
                     <div data-skill="beginner">
-                        <div class="table-wrapper">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Shortcut</th>
-                                        <th>Action</th>
-                                        <th>Notes</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><kbd>@</kbd></td>
-                                        <td>File reference</td>
-                                        <td>Add file to context</td>
-                                    </tr>
-                                    <tr>
-                                        <td><kbd>Ctrl+C</kbd></td>
-                                        <td>Stop generation</td>
-                                        <td>Interrupt current output</td>
-                                    </tr>
-                                    <tr>
-                                        <td><kbd>Up/Down</kbd></td>
-                                        <td>History navigation</td>
-                                        <td>Browse previous prompts</td>
-                                    </tr>
-                                    <tr>
-                                        <td><kbd>Tab</kbd></td>
-                                        <td>Autocomplete</td>
-                                        <td>File paths after @</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <!-- Platform Tabs for Gemini Shortcuts -->
+                        <div class="platform-tabs" data-group="gemini-tips-shortcuts">
+                            <button class="platform-tab-btn" data-platform="windows">
+                                <span class="platform-icon">&#128187;</span> Windows
+                            </button>
+                            <button class="platform-tab-btn" data-platform="mac">
+                                <span class="platform-icon">&#127822;</span> Mac
+                            </button>
+                        </div>
+
+                        <!-- Windows Gemini Shortcuts -->
+                        <div class="platform-content" data-group="gemini-tips-shortcuts" data-platform="windows">
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Shortcut</th>
+                                            <th>Action</th>
+                                            <th>Notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><kbd>@</kbd></td>
+                                            <td>File reference</td>
+                                            <td>Add file to context</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+C</kbd> x2</td>
+                                            <td>Cancel / Quit</td>
+                                            <td>Press twice to exit</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Escape</kbd> x2</td>
+                                            <td>Browse history</td>
+                                            <td>Previous interactions</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Shift+Tab</kbd></td>
+                                            <td>Auto-apply mode</td>
+                                            <td>Toggle auto-apply</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+Y</kbd></td>
+                                            <td>YOLO mode</td>
+                                            <td>Auto-approval toggle</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+L</kbd></td>
+                                            <td>Clear screen</td>
+                                            <td>Clear terminal</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+S</kbd></td>
+                                            <td>Print full response</td>
+                                            <td>Show complete output</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+T</kbd></td>
+                                            <td>Tool descriptions</td>
+                                            <td>Toggle tool info</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Tab</kbd></td>
+                                            <td>Autocomplete</td>
+                                            <td>File paths after @</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Alt+Z</kbd></td>
+                                            <td>Undo</td>
+                                            <td>Undo last action</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Up/Down</kbd></td>
+                                            <td>History navigation</td>
+                                            <td>Browse previous prompts</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Mac Gemini Shortcuts -->
+                        <div class="platform-content" data-group="gemini-tips-shortcuts" data-platform="mac">
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Shortcut</th>
+                                            <th>Action</th>
+                                            <th>Notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><kbd>@</kbd></td>
+                                            <td>File reference</td>
+                                            <td>Add file to context</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+C</kbd> x2</td>
+                                            <td>Cancel / Quit</td>
+                                            <td>Press twice to exit</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Escape</kbd> x2</td>
+                                            <td>Browse history</td>
+                                            <td>Previous interactions</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Shift+Tab</kbd></td>
+                                            <td>Auto-apply mode</td>
+                                            <td>Toggle auto-apply</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+Y</kbd></td>
+                                            <td>YOLO mode</td>
+                                            <td>Auto-approval toggle</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+L</kbd></td>
+                                            <td>Clear screen</td>
+                                            <td>Clear terminal</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+S</kbd></td>
+                                            <td>Print full response</td>
+                                            <td>Show complete output</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Ctrl+T</kbd></td>
+                                            <td>Tool descriptions</td>
+                                            <td>Toggle tool info</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Tab</kbd></td>
+                                            <td>Autocomplete</td>
+                                            <td>File paths after @</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Cmd+Z</kbd></td>
+                                            <td>Undo</td>
+                                            <td>Undo last action</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Option+M</kbd></td>
+                                            <td>Toggle Markdown</td>
+                                            <td>Markdown rendering</td>
+                                        </tr>
+                                        <tr>
+                                            <td><kbd>Up/Down</kbd></td>
+                                            <td>History navigation</td>
+                                            <td>Browse previous prompts</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
