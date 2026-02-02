@@ -96,12 +96,19 @@
                         <span class="badge secondary">Vibe Coding 2026</span>
                     </div>
                     <h1>CW Vibe Code Guide</h1>
-                    <p class="subtitle">The official playbook for AI-augmented development. Stop chatting, start orchestrating. Master the art of the relay race between Claude and Gemini.</p>
+                    <p class="subtitle">Your beginner-friendly guide to working smarter with AI assistants. Learn how to use AI tools to help with everyday tasks - from creating presentations to organizing spreadsheets to building software.</p>
 
                     <!-- Collaboration Credit -->
                     <div class="collab-credit">
                         <p>&#129309; This guide was created in collaboration with <strong>Claude Code</strong> and <strong>Gemini CLI</strong> - a real-world example of multi-agent vibe coding.</p>
                     </div>
+                </div>
+
+                <!-- What is Vibe Coding Section -->
+                <div class="callout whale">
+                    <div class="callout-title">&#128161; What is Vibe Coding?</div>
+                    <p><strong>Vibe Coding</strong> is a new way of working where you describe what you want to accomplish in plain English, and an AI assistant helps you create it. Instead of learning complex technical skills, you simply explain your goal - like "create a summary of this data" or "build a presentation about Q4 results" - and the AI helps make it happen.</p>
+                    <p style="margin-top: 10px;"><strong>Think of it like having a smart assistant</strong> who can understand your requests, ask clarifying questions, and do the heavy lifting while you guide the direction.</p>
                 </div>
 
                 <!-- Tool Selection Tabs -->
@@ -120,30 +127,46 @@
 
                     <div class="card tool-card claude">
                         <span class="tool-icon">&#129504;</span>
-                        <h3 class="tool-title">The Architect & Reasoner</h3>
-                        <p>Claude Code excels at deep reasoning, complex problem-solving, and architectural decisions. Use it when you need to understand and design.</p>
+                        <h3 class="tool-title">The Thoughtful Problem-Solver</h3>
+                        <p>Claude Code is like having a brilliant colleague who can analyze complex situations, think through problems carefully, and provide well-reasoned solutions. It's great at understanding context and giving detailed, thoughtful responses.</p>
                         <ul>
-                            <li><strong>Context Window:</strong> 200K tokens</li>
-                            <li><strong>Strengths:</strong> Deep reasoning, code quality, nuanced understanding</li>
-                            <li><strong>Best For:</strong> Complex implementation, debugging, refactoring</li>
+                            <li><strong>Strengths:</strong> Deep thinking, quality analysis, understanding nuance</li>
+                            <li><strong>Best For:</strong> Complex tasks, problem-solving, detailed explanations</li>
                         </ul>
                     </div>
 
                     <h3>When to Use Claude</h3>
+
+                    <h4>Business & Non-Technical Tasks</h4>
                     <ul>
-                        <li>"Read this messy module and explain how it works."</li>
-                        <li>"Propose a plan to migrate from Library X to Library Y."</li>
-                        <li>"Debug this race condition that only happens on Tuesdays."</li>
-                        <li>"Review this PR and identify potential issues."</li>
+                        <li>"Help me create talking points for my brand presentation."</li>
+                        <li>"I have data in 5 Excel sheets - help me combine and analyze them."</li>
+                        <li>"Draft an email to explain this policy change to our partners."</li>
+                        <li>"Review this document and suggest improvements."</li>
+                        <li>"Help me organize this messy spreadsheet into a clean format."</li>
+                        <li>"Create a summary of these meeting notes."</li>
+                    </ul>
+
+                    <h4>Technical Tasks</h4>
+                    <ul>
+                        <li>"Debug this error message I keep getting."</li>
+                        <li>"Review this code change before we release it."</li>
+                        <li>"Explain how this part of our system works."</li>
+                        <li>"Help me plan how to update this old feature."</li>
                     </ul>
 
                     <div class="callout claude">
-                        <div class="callout-title">&#128161; Quick Start</div>
-                        <p>Install Claude Code and start your first session:</p>
+                        <div class="callout-title">&#128161; Quick Start - Choose Your Path</div>
+                        <p><strong>Option 1: Desktop App (Easiest)</strong><br>
+                        Download the Claude Desktop App from <a href="https://claude.ai/download" target="_blank" style="color: #0066cc;">claude.ai/download</a> - no terminal needed!</p>
+                        <p style="margin-top: 10px;"><strong>Option 2: Terminal Installation</strong><br>
+                        For developers who prefer command-line tools:</p>
                     </div>
 
                     <pre><code>npm install -g @anthropic-ai/claude-code
 claude</code></pre>
+
+                    <p style="margin-top: 10px;"><a href="installation.html" style="color: #0066cc;">See the full Installation Guide</a> for detailed setup instructions.</p>
                 </div>
 
                 <!-- Gemini Tab Content -->
@@ -152,22 +175,21 @@ claude</code></pre>
 
                     <div class="card tool-card gemini">
                         <span class="tool-icon">&#9889;</span>
-                        <h3 class="tool-title">The Executor & Operator</h3>
-                        <p>Gemini CLI (powered by <strong>Gemini 3</strong>) excels at massive context handling, broad codebase operations, and reliable execution. Use it when you need to implement across many files.</p>
+                        <h3 class="tool-title">The Fast Executor</h3>
+                        <p>Gemini CLI (powered by <strong>Gemini 3</strong>) is like a speedy assistant who can handle large amounts of information quickly and execute tasks reliably. It's great when you need to work with lots of files or data at once.</p>
                         <ul>
-                            <li><strong>Context Window:</strong> Up to 2M tokens (Gemini 3 Pro)</li>
                             <li><strong>Free Tier:</strong> 60 requests/min, 1000/day</li>
                             <li><strong>Models:</strong> Gemini 3 Pro, Flash, Deep Think</li>
-                            <li><strong>Best For:</strong> Large codebases, batch operations, research</li>
+                            <li><strong>Best For:</strong> Large projects, batch tasks, research</li>
                         </ul>
                     </div>
 
                     <h3>When to Use Gemini</h3>
                     <ul>
-                        <li>"Search the entire repo for this deprecated pattern."</li>
-                        <li>"Here is the plan from Claude. Execute steps 1-5."</li>
-                        <li>"Analyze all policy calculation files for inconsistencies."</li>
-                        <li>Tasks requiring > 100 files in context.</li>
+                        <li>"Search through all our documents for mentions of this topic."</li>
+                        <li>"Process all these files at once."</li>
+                        <li>"Find inconsistencies across multiple spreadsheets."</li>
+                        <li>Tasks requiring lots of files or data to be reviewed together.</li>
                     </ul>
 
                     <div class="callout gemini">
@@ -227,11 +249,6 @@ gemini</code></pre>
                                 <td>Gemini 3 Pro/Flash/Deep Think</td>
                             </tr>
                             <tr>
-                                <td>Context Window</td>
-                                <td>200K tokens</td>
-                                <td>Up to 2M tokens (Gemini 3 Pro)</td>
-                            </tr>
-                            <tr>
                                 <td>Free Tier</td>
                                 <td>Limited</td>
                                 <td>60 req/min, 1000/day</td>
@@ -239,49 +256,121 @@ gemini</code></pre>
                             <tr>
                                 <td>Strengths</td>
                                 <td>Deep reasoning, code quality</td>
-                                <td>Massive context, speed, Deep Think mode</td>
+                                <td>Speed, handles lots of data</td>
                             </tr>
                             <tr>
                                 <td>Best For</td>
-                                <td>Complex implementation</td>
-                                <td>Research, large codebases</td>
+                                <td>Complex tasks, analysis</td>
+                                <td>Research, large projects</td>
                             </tr>
                             <tr>
                                 <td>Config File</td>
                                 <td>CLAUDE.md</td>
                                 <td>GEMINI.md</td>
                             </tr>
-                            <tr>
-                                <td>Sub-agents</td>
-                                <td>Task tool</td>
-                                <td>Built-in delegation</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Philosophy Section -->
-                <h2 id="philosophy">&#10024; Agent Agnosticism: The New Normal</h2>
+                <h2 id="philosophy">&#10024; Using the Right Tool for the Job</h2>
                 <div class="callout purple">
-                    <div class="callout-title">The Governing Rule</div>
-                    <p><strong>Use the best synthetic brain for the specific task at hand.</strong> Don't be a Claude maxi or a Gemini purist. Be an orchestrator.</p>
+                    <div class="callout-title">The Key Principle</div>
+                    <p><strong>Pick the best AI assistant for each specific task.</strong> Different tools have different strengths - use them together for the best results.</p>
                 </div>
 
-                <p>Vibe coding in 2026 isn't about finding one tool to rule them all. It's about building a "Team of Agents" that you direct. Use Claude for the thinking, Gemini for the doing, and switch between them as needed.</p>
+                <p>Vibe coding in 2026 isn't about finding one tool that does everything. It's about having a "team" of AI assistants that you direct. Use Claude when you need careful thinking, Gemini when you need speed and scale, and switch between them as needed.</p>
 
                 <div class="card-grid">
                     <div class="card tool-card claude">
                         <span class="tool-icon">&#129504;</span>
-                        <h4 class="tool-title">The Red Team</h4>
+                        <h4 class="tool-title">The Thinker</h4>
                         <p><strong>Primary Agent:</strong> Claude Code</p>
-                        <p><strong>Role:</strong> The Architect & Reasoner</p>
+                        <p><strong>Role:</strong> Deep analysis & problem-solving</p>
                     </div>
                     <div class="card tool-card gemini">
                         <span class="tool-icon">&#9889;</span>
-                        <h4 class="tool-title">The Blue Team</h4>
+                        <h4 class="tool-title">The Executor</h4>
                         <p><strong>Primary Agent:</strong> Gemini CLI</p>
-                        <p><strong>Role:</strong> The Executor & Operator</p>
+                        <p><strong>Role:</strong> Fast execution & large tasks</p>
                     </div>
+                </div>
+
+                <!-- Glossary Section -->
+                <h2 id="glossary">&#128214; Glossary</h2>
+                <p>New to AI tools? Here are common terms explained in plain language:</p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Term</th>
+                                <th>What It Means</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Vibe Coding</strong></td>
+                                <td>A way of working where you describe what you want in plain English and an AI assistant helps create it. You guide the direction while the AI does the technical work.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Agentic AI</strong></td>
+                                <td>AI that can take actions on its own (like reading files, searching, or making changes) rather than just answering questions. It's like an assistant who can actually do tasks, not just give advice.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Claude Code</strong></td>
+                                <td>An AI assistant made by Anthropic that can help with coding, writing, analysis, and many other tasks. Available as a Desktop App (easy) or Terminal tool (for developers).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Desktop App</strong></td>
+                                <td>A regular application you download and install on your computer (like Word or Chrome). The Claude Desktop App lets you use Claude Code without needing to type terminal commands.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IDE (Integrated Development Environment)</strong></td>
+                                <td>A software application where developers write and edit code. Think of it like Microsoft Word, but for writing computer programs. Examples: VS Code, Cursor, Google Antigravity.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Markdown Files (.md)</strong></td>
+                                <td>Simple text files that use special symbols (like # for headings or * for bullets) to create formatted documents. Many AI tools use these for instructions and notes.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Terminal / Command Line</strong></td>
+                                <td>A text-based way to interact with your computer by typing commands. It looks like a black window with text. Both Claude Code and Gemini CLI run in the terminal.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CLI (Command Line Interface)</strong></td>
+                                <td>A program you use by typing text commands instead of clicking buttons. "Gemini CLI" means Gemini that you control by typing commands.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>npm (Node Package Manager)</strong></td>
+                                <td>A tool for downloading and installing programs made with JavaScript. Think of it like an app store for developer tools.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PATH</strong></td>
+                                <td>A list of folders where your computer looks for programs. When you type a command, your computer searches these folders to find the program to run.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Git / Git Bash</strong></td>
+                                <td>Git is a tool developers use to track changes to files and collaborate. Git Bash is a terminal program that lets you use Git commands on Windows.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API Key</strong></td>
+                                <td>A password-like code that lets a program access a service. It's how the AI tools verify you have permission to use them.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Authentication</strong></td>
+                                <td>The process of proving who you are (usually by logging in). Required before you can use Claude Code or Gemini CLI.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Prompt</strong></td>
+                                <td>The instructions or questions you give to an AI. A good prompt clearly explains what you want the AI to do.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Context</strong></td>
+                                <td>The information the AI knows about when answering your question. This includes your current conversation, files you've shared, and previous instructions.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>

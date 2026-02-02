@@ -126,13 +126,106 @@
                             <li><strong>4 GB+ RAM</strong> and internet connection</li>
                         </ul>
 
+                        <!-- Claude Access Request for Windows Users -->
+                        <div class="callout warning">
+                            <div class="callout-title">&#128273; Need Claude Access? (Cover Whale Employees)</div>
+                            <p><strong>Before installing Claude Code</strong>, you need to have access to Claude granted by IT. If you don't have access yet:</p>
+                            <p style="margin-top: 10px;"><a href="https://coverwhale.atlassian.net/servicedesk/customer/portal/8/group/26/create/10089" target="_blank" style="color: #0066cc; font-weight: bold;">&#128221; Submit an IT Access Request Ticket Here</a></p>
+                            <p style="margin-top: 10px;">IT will review your request and grant access to Claude. You will receive an email confirmation once approved.</p>
+                        </div>
+
                         <div class="callout whale">
                             <div class="callout-title">&#128161; Native Installation Recommended</div>
                             <p>Claude Code has native installers for all platforms that auto-update in the background. No Node.js required!</p>
                         </div>
                     </div>
 
-                    <h2 id="claude-install">Installation</h2>
+                    <!-- Claude Desktop App Option -->
+                    <h2 id="claude-desktop-app">Option A: Claude Desktop App (Easiest - No Terminal Required)</h2>
+                    <div data-skill="beginner">
+                        <div class="callout success" style="border-left: 4px solid #28a745;">
+                            <div class="callout-title" style="color: #28a745;">&#127775; Recommended for Non-Technical Users</div>
+                            <p>If you're not comfortable with terminal/command line installations, the <strong>Claude Desktop App</strong> is the easiest way to use Claude Code. It's a regular application you download and install like any other program - no terminal commands needed!</p>
+                        </div>
+
+                        <h3>What is the Claude Desktop App?</h3>
+                        <p>The Claude Desktop App is a standalone application that gives you access to Claude Code through a friendly graphical interface. You can chat with Claude, have it read and edit files, and perform all the same tasks as the terminal version - but with a visual window instead of typing commands.</p>
+
+                        <h3>Benefits of the Desktop App</h3>
+                        <ul>
+                            <li><strong>No terminal required</strong> - Works like a normal desktop application</li>
+                            <li><strong>Simple installation</strong> - Download, install, and sign in</li>
+                            <li><strong>Visual interface</strong> - See your conversations in a clean, easy-to-read format</li>
+                            <li><strong>Same powerful features</strong> - Can read files, write code, and help with all the same tasks</li>
+                            <li><strong>Auto-updates</strong> - Stays up to date automatically</li>
+                        </ul>
+
+                        <!-- Platform Tabs for Desktop App -->
+                        <div class="platform-tabs" data-group="claude-desktop">
+                            <button class="platform-tab-btn" data-platform="mac">
+                                <span class="platform-icon">&#127822;</span> Mac
+                            </button>
+                            <button class="platform-tab-btn" data-platform="windows">
+                                <span class="platform-icon">&#128187;</span> Windows
+                            </button>
+                        </div>
+
+                        <!-- Mac Desktop App Installation -->
+                        <div class="platform-content" data-group="claude-desktop" data-platform="mac">
+                            <h4>Installing Claude Desktop on Mac</h4>
+                            <ol>
+                                <li><strong>Download the app:</strong> Go to <a href="https://claude.ai/download" target="_blank" style="color: #0066cc;">https://claude.ai/download</a></li>
+                                <li><strong>Open the installer:</strong> Double-click the downloaded <code>.dmg</code> file</li>
+                                <li><strong>Drag to Applications:</strong> Drag the Claude icon to your Applications folder</li>
+                                <li><strong>Open Claude:</strong> Find Claude in your Applications folder (or use Spotlight: <kbd>Cmd + Space</kbd>, type "Claude")</li>
+                                <li><strong>Sign in:</strong> Log in with your Claude account (the same one IT approved for you)</li>
+                                <li><strong>Start using Claude:</strong> You're ready! Type your questions or requests in the chat window</li>
+                            </ol>
+
+                            <div class="callout whale">
+                                <div class="callout-title">&#127822; Mac Security Note</div>
+                                <p>If you see a message saying the app "can't be opened because it's from an unidentified developer," go to <strong>System Preferences > Security & Privacy</strong> and click "Open Anyway."</p>
+                            </div>
+                        </div>
+
+                        <!-- Windows Desktop App Installation -->
+                        <div class="platform-content" data-group="claude-desktop" data-platform="windows">
+                            <h4>Installing Claude Desktop on Windows</h4>
+                            <ol>
+                                <li><strong>Download the app:</strong> Go to <a href="https://claude.ai/download" target="_blank" style="color: #0066cc;">https://claude.ai/download</a></li>
+                                <li><strong>Run the installer:</strong> Double-click the downloaded <code>.exe</code> file</li>
+                                <li><strong>Follow the prompts:</strong> Click "Next" through the installation wizard</li>
+                                <li><strong>Launch Claude:</strong> Find Claude in your Start Menu or on your Desktop</li>
+                                <li><strong>Sign in:</strong> Log in with your Claude account (the same one IT approved for you)</li>
+                                <li><strong>Start using Claude:</strong> You're ready! Type your questions or requests in the chat window</li>
+                            </ol>
+
+                            <div class="callout whale">
+                                <div class="callout-title">&#128187; Windows Security Note</div>
+                                <p>If Windows SmartScreen shows a warning, click <strong>"More info"</strong> and then <strong>"Run anyway"</strong>. This is normal for newly downloaded applications.</p>
+                            </div>
+                        </div>
+
+                        <h3>Enabling Claude Code Features in the Desktop App</h3>
+                        <p>To use Claude Code features (file reading, code editing, running commands) in the Desktop App:</p>
+                        <ol>
+                            <li>Open the Claude Desktop App</li>
+                            <li>Click on your <strong>profile icon</strong> or <strong>Settings</strong> (gear icon)</li>
+                            <li>Look for <strong>"Claude Code"</strong> or <strong>"Developer Features"</strong></li>
+                            <li>Enable the features you want to use</li>
+                            <li>Grant file access permissions when prompted</li>
+                        </ol>
+
+                        <div class="callout success">
+                            <div class="callout-title">&#9989; You're All Set!</div>
+                            <p>With the Desktop App installed, you can skip the terminal installation steps below. Just open Claude, sign in, and start asking questions or requesting help with your tasks!</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 40px 0; border: none; border-top: 2px dashed #ddd;">
+
+                    <h2 id="claude-install">Option B: Terminal Installation (For Advanced Users)</h2>
+                    <p style="margin-bottom: 20px; color: #666;"><em>If you prefer using Claude Code in your terminal (command line), or need it for development workflows, follow the instructions below for your platform.</em></p>
                     <div data-skill="beginner">
                         <!-- Platform Tabs -->
                         <div class="platform-tabs" data-group="claude-install">
@@ -173,9 +266,35 @@ npm install -g @anthropic-ai/claude-code</code></pre>
 
                         <!-- Windows Installation -->
                         <div class="platform-content" data-group="claude-install" data-platform="windows">
+
+                            <!-- CRITICAL: Git for Windows Prerequisite -->
+                            <div class="callout warning" style="border-left: 4px solid #dc3545; background-color: #fff5f5;">
+                                <div class="callout-title" style="color: #dc3545;">&#9888;&#65039; REQUIRED: Install Git for Windows FIRST</div>
+                                <p><strong>Claude Code requires Git Bash to work properly on Windows.</strong> You must install Git for Windows before installing Claude Code, or Claude Code will not function correctly.</p>
+
+                                <h4 style="margin-top: 15px;">Step-by-Step Git for Windows Installation:</h4>
+                                <ol>
+                                    <li><strong>Download Git for Windows:</strong> Go to <a href="https://git-scm.com/download/win" target="_blank" style="color: #0066cc;">https://git-scm.com/download/win</a></li>
+                                    <li><strong>Run the installer:</strong> Double-click the downloaded file (e.g., <code>Git-2.x.x-64-bit.exe</code>)</li>
+                                    <li><strong>Follow the installation wizard:</strong>
+                                        <ul>
+                                            <li>Accept the license agreement</li>
+                                            <li>Use the default installation location (usually <code>C:\Program Files\Git</code>)</li>
+                                            <li><strong>Important:</strong> On the "Adjusting your PATH environment" screen, select <strong>"Git from the command line and also from 3rd-party software"</strong></li>
+                                            <li>Accept defaults for all other options</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Complete installation:</strong> Click "Install" and wait for it to finish</li>
+                                    <li><strong>Verify installation:</strong> Open a new PowerShell or Command Prompt window and type:
+                                        <pre><code>git --version</code></pre>
+                                        You should see something like <code>git version 2.x.x.windows.1</code>
+                                    </li>
+                                </ol>
+                            </div>
+
                             <div class="callout whale">
                                 <div class="callout-title">&#128161; Windows Native Support</div>
-                                <p>Claude Code now has native Windows support - no WSL required! Requires <a href="https://git-scm.com/download/win" target="_blank">Git for Windows</a> for Git Bash.</p>
+                                <p>Claude Code now has native Windows support - no WSL required! Git for Windows (installed above) provides the Git Bash environment that Claude Code needs.</p>
                             </div>
 
                             <h3>Option 1: PowerShell (Easiest)</h3>
@@ -206,6 +325,56 @@ npm install -g @anthropic-ai/claude-code</code></pre>
                             <h3>Option 4: npm (Deprecated)</h3>
                             <pre><code># Only if native installer doesn't work (requires Node.js 18+)
 npm install -g @anthropic-ai/claude-code</code></pre>
+
+                            <!-- NEW: Setting Up PATH Section -->
+                            <div class="callout whale" style="border-left: 4px solid #0066cc; margin-top: 20px;">
+                                <div class="callout-title" style="color: #0066cc;">&#128736; IMPORTANT: Setting Up Your PATH (If "claude" Command Not Found)</div>
+                                <p>After installation, if you get a "<strong>claude is not recognized</strong>" or "<strong>command not found</strong>" error, you need to add Claude Code to your system PATH. This tells Windows where to find the Claude program.</p>
+
+                                <h4 style="margin-top: 15px;">Step-by-Step PATH Setup:</h4>
+                                <ol>
+                                    <li><strong>Open System Properties:</strong>
+                                        <ul>
+                                            <li>Press <kbd>Win + R</kbd> to open the Run dialog</li>
+                                            <li>Type <code>sysdm.cpl</code> and press Enter</li>
+                                            <li>Click the <strong>"Advanced"</strong> tab</li>
+                                            <li>Click the <strong>"Environment Variables..."</strong> button at the bottom</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Edit the PATH variable:</strong>
+                                        <ul>
+                                            <li>In the <strong>"User variables"</strong> section (top half), find and select <strong>"Path"</strong></li>
+                                            <li>Click <strong>"Edit..."</strong></li>
+                                            <li>Click <strong>"New"</strong></li>
+                                            <li>Add this path: <code>%USERPROFILE%\.local\bin</code></li>
+                                            <li>Click <strong>"OK"</strong> to close each window</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Restart your terminal:</strong>
+                                        <ul>
+                                            <li><strong>Close ALL</strong> open PowerShell, Command Prompt, or terminal windows</li>
+                                            <li>Open a <strong>new</strong> PowerShell or Command Prompt window</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Verify it works:</strong>
+                                        <pre><code>claude --version</code></pre>
+                                        <p>You should see the Claude Code version number (e.g., <code>claude 1.x.x</code>)</p>
+                                    </li>
+                                </ol>
+
+                                <h4 style="margin-top: 15px;">Alternative: Quick PATH Fix via PowerShell</h4>
+                                <p>If you prefer using commands, run this in PowerShell as Administrator:</p>
+                                <pre><code># Add Claude Code to your PATH permanently
+$currentPath = [Environment]::GetEnvironmentVariable("Path", "User")
+$newPath = "$env:USERPROFILE\.local\bin"
+if ($currentPath -notlike "*$newPath*") {
+    [Environment]::SetEnvironmentVariable("Path", "$currentPath;$newPath", "User")
+    Write-Host "PATH updated! Please restart your terminal."
+} else {
+    Write-Host "PATH already contains Claude Code location."
+}</code></pre>
+                                <p>Then <strong>close and reopen</strong> your terminal window.</p>
+                            </div>
                         </div>
 
                         <!-- Linux Installation -->
@@ -318,19 +487,35 @@ claude doctor</code></pre>
 
                         <!-- Windows Troubleshooting -->
                         <div class="platform-content" data-group="claude-troubleshoot" data-platform="windows">
-                            <h3>"claude command not found"</h3>
-                            <p>The installer should add Claude Code to your PATH automatically. If not:</p>
+                            <h3>"claude command not found" or "not recognized"</h3>
+                            <p>This is the most common issue on Windows. Follow these steps:</p>
+
+                            <h4>Step 1: Verify the Installation Location</h4>
+                            <p>First, check if Claude Code was installed:</p>
+                            <pre><code># Open PowerShell and run:
+Test-Path "$env:USERPROFILE\.local\bin\claude.exe"
+
+# If this returns "True", Claude is installed but not in your PATH
+# If "False", the installation may have failed - try reinstalling</code></pre>
+
+                            <h4>Step 2: Add Claude to Your PATH</h4>
                             <ol>
-                                <li>Press <kbd>Win + Pause/Break</kbd> (or Settings > System > About > Advanced system settings)</li>
-                                <li>Click "Environment Variables"</li>
-                                <li>Under "User variables", find or create <code>PATH</code></li>
+                                <li>Press <kbd>Win + R</kbd>, type <code>sysdm.cpl</code>, press Enter</li>
+                                <li>Click "Advanced" tab, then "Environment Variables..."</li>
+                                <li>Under "User variables", find or create <code>Path</code></li>
+                                <li>Click "Edit...", then "New"</li>
                                 <li>Add: <code>%USERPROFILE%\.local\bin</code></li>
-                                <li>Click OK and restart your terminal</li>
+                                <li>Click OK on all windows</li>
+                                <li><strong>Close ALL terminal windows and open a new one</strong></li>
                             </ol>
 
+                            <h4>Step 3: Verify It Works</h4>
+                            <pre><code>claude --version</code></pre>
+
                             <h3>"Git Bash not found"</h3>
+                            <p>Claude Code requires Git Bash. If you see this error:</p>
                             <ol>
-                                <li>Install <a href="https://git-scm.com/download/win" target="_blank">Git for Windows</a></li>
+                                <li>Install <a href="https://git-scm.com/download/win" target="_blank">Git for Windows</a> (see Prerequisites section above)</li>
                                 <li>Find your Git Bash installation (usually <code>C:\Program Files\Git\bin\bash.exe</code>)</li>
                                 <li>Set the environment variable in PowerShell:</li>
                             </ol>
@@ -347,6 +532,10 @@ Remove-Item -Path "$env:USERPROFILE\.claude.json" -Force
 
 # Then restart Claude Code
 claude</code></pre>
+
+                            <h3>Still Having Issues?</h3>
+                            <p>Run the diagnostic tool to identify problems:</p>
+                            <pre><code>claude doctor</code></pre>
                         </div>
 
                         <!-- Linux Troubleshooting -->
@@ -580,6 +769,17 @@ node --version
 
 # If below 20, download from nodejs.org</code></pre>
 
+                            <div class="callout warning">
+                                <div class="callout-title">&#9888;&#65039; Need to Install Node.js?</div>
+                                <p>If you don't have Node.js or have an older version:</p>
+                                <ol>
+                                    <li>Go to <a href="https://nodejs.org" target="_blank">https://nodejs.org</a></li>
+                                    <li>Download the <strong>LTS (Long Term Support)</strong> version</li>
+                                    <li>Run the installer and follow the prompts</li>
+                                    <li>Restart your terminal after installation</li>
+                                </ol>
+                            </div>
+
                             <h3>Option 1: npm Global Install (Recommended)</h3>
                             <pre><code>npm install -g @google/gemini-cli</code></pre>
 
@@ -593,13 +793,29 @@ npx @google/gemini-cli</code></pre>
                             <h3>Verify Installation</h3>
                             <pre><code>gemini --version</code></pre>
 
-                            <div class="callout warning">
-                                <div class="callout-title">&#9888;&#65039; PATH Issues?</div>
-                                <p>If <code>gemini</code> is not recognized, ensure npm global bin is in your PATH:</p>
-                                <pre><code># Find npm global path
+                            <!-- NEW: Detailed PATH setup for Gemini CLI on Windows -->
+                            <div class="callout whale" style="border-left: 4px solid #0066cc; margin-top: 20px;">
+                                <div class="callout-title" style="color: #0066cc;">&#128736; "gemini" Command Not Found? Set Up Your PATH</div>
+                                <p>If the <code>gemini</code> command is not recognized after installation, you need to add npm's global bin folder to your PATH.</p>
+
+                                <h4 style="margin-top: 15px;">Step 1: Find Your npm Global Path</h4>
+                                <pre><code># Run this command to see where npm installs global packages:
 npm config get prefix
 
-# Add to PATH: %APPDATA%\npm</code></pre>
+# This will show something like: C:\Users\YourName\AppData\Roaming\npm</code></pre>
+
+                                <h4 style="margin-top: 15px;">Step 2: Add to Your PATH</h4>
+                                <ol>
+                                    <li>Press <kbd>Win + R</kbd>, type <code>sysdm.cpl</code>, press Enter</li>
+                                    <li>Click "Advanced" tab, then "Environment Variables..."</li>
+                                    <li>Under "User variables", find <code>Path</code> and click "Edit..."</li>
+                                    <li>Click "New" and add: <code>%APPDATA%\npm</code></li>
+                                    <li>Click OK on all windows</li>
+                                    <li><strong>Close ALL terminal windows and open a new one</strong></li>
+                                </ol>
+
+                                <h4 style="margin-top: 15px;">Step 3: Verify</h4>
+                                <pre><code>gemini --version</code></pre>
                             </div>
                         </div>
 
