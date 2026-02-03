@@ -5,7 +5,7 @@
 
 class SkillFilterManager {
     constructor() {
-        this.storageKey = 'cw_skill_filters';
+        this.storageKey = 'cw_skill_filters_v2';
         this.filters = {
             beginner: true,
             intermediate: true,
