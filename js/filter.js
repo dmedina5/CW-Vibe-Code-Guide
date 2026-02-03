@@ -9,7 +9,7 @@ class SkillFilterManager {
         this.filters = {
             beginner: true,
             intermediate: true,
-            advanced: true
+            advanced: false
         };
         this.filterBar = null;
         this.checkboxes = [];

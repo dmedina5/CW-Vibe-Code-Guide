@@ -59,6 +59,9 @@
                 <a href="cheatsheet.html" class="nav-link">
                     <span class="nav-icon">&#128203;</span> Cheatsheet
                 </a>
+                <a href="glossary.html" class="nav-link">
+                    <span class="nav-icon">&#128214;</span> Glossary
+                </a>
             </div>
 
             <div class="nav-footer">
@@ -100,8 +103,8 @@
                         <input type="checkbox" checked data-level="intermediate">
                         <span class="chip intermediate">Intermediate</span>
                     </label>
-                    <label class="filter-chip active">
-                        <input type="checkbox" checked data-level="advanced">
+                    <label class="filter-chip">
+                        <input type="checkbox" data-level="advanced">
                         <span class="chip advanced">Advanced</span>
                     </label>
                 </div>
@@ -364,53 +367,139 @@ Claude skill configuration."</code></pre>
                         </div>
                     </div>
 
-                    <h2 id="claude-debugging">Complex Debugging</h2>
-                    <div data-skill="intermediate">
-                        <div class="callout warning" style="margin-bottom: 16px;">
-                            <div class="callout-title">&#128161; Hypothetical Example</div>
-                            <p>This debugging workflow demonstrates how Claude Code could assist with complex calculation issues.</p>
+                    <h2 id="claude-spreadsheet">Spreadsheet Data Analysis</h2>
+                    <div data-skill="beginner">
+                        <p>Let AI help you analyze data across multiple spreadsheets, find patterns, and generate insights - no coding experience required.</p>
+
+                        <pre><code>"I have 5 Excel files with monthly sales data from different regions.
+Can you help me:
+
+1. Combine all the data into one summary spreadsheet
+2. Calculate total sales by region and by month
+3. Identify which products are performing best and worst
+4. Create a comparison showing month-over-month growth
+5. Flag any data that looks unusual or might be errors
+
+The files are in my Downloads folder:
+- northeast_sales.xlsx
+- southeast_sales.xlsx
+- midwest_sales.xlsx
+- southwest_sales.xlsx
+- west_sales.xlsx"</code></pre>
+
+                        <div class="callout claude">
+                            <div class="callout-title">&#128202; Business Value</div>
+                            <p>Turn hours of manual Excel work into a conversation. Claude can read your spreadsheets, perform calculations, and create summaries - just describe what you need in plain English.</p>
                         </div>
-                        <pre><code># Share the bug context
-"We have a bug where renewal premiums are sometimes calculated
-incorrectly for policies with mid-term endorsements.
-
-Here's the relevant code:
-/add src/services/renewal.ts
-/add src/services/endorsement.ts
-
-Here's a failing test case:
-- Original premium: $5,000
-- Endorsement at day 180: +$500 coverage
-- Expected renewal: $5,250
-- Actual renewal: $5,000
-
-Walk me through the calculation step by step and identify
-where it goes wrong."</code></pre>
                     </div>
 
-                    <h2 id="claude-refactoring">API Refactoring</h2>
-                    <div data-skill="advanced">
-                        <div class="callout warning" style="margin-bottom: 16px;">
-                            <div class="callout-title">&#128161; Hypothetical Example</div>
-                            <p>This refactoring workflow demonstrates how Claude Code's plan mode could guide major architectural changes.</p>
+                    <h2 id="claude-workflow-automation">Workflow Automation</h2>
+                    <div data-skill="intermediate">
+                        <p>Automate repetitive business tasks by describing what you want to accomplish. Claude can create scripts that run automatically.</p>
+
+                        <pre><code>"I need to automate our weekly reporting process:
+
+Every Monday morning, I manually:
+1. Download new leads from our CRM export (CSV file)
+2. Check each lead against our existing customer database
+3. Categorize leads by size (small/medium/large) based on revenue
+4. Send an email summary to the sales team
+5. Update our tracking spreadsheet
+
+Can you help me create a workflow that does this automatically?
+I'd like it to run every Monday at 7 AM."</code></pre>
+
+                        <div class="callout whale">
+                            <div class="callout-title">&#9989; What Claude Creates</div>
+                            <p>Claude will help you build a Python script with clear comments explaining each step. It can even set up the schedule to run automatically - just describe your workflow in your own words.</p>
                         </div>
-                        <pre><code># Plan the refactoring
-> (Shift+Tab for plan mode)
+                    </div>
 
-"We need to migrate our quote API from REST to GraphQL.
-Current implementation: /add src/routes/quote.ts
+                    <h2 id="claude-content">Content Generation & Writing</h2>
+                    <div data-skill="beginner">
+                        <p>Get help writing professional content, from emails to reports to presentations.</p>
 
-Requirements:
-1. Maintain backward compatibility with existing clients
-2. Add GraphQL schema and resolvers
-3. Implement rate limiting
-4. Add comprehensive logging
+                        <pre><code>"Help me create a quarterly business review presentation:
 
-Create a migration plan with specific steps."
+Here's our Q4 data:
+- Revenue: $2.4M (up 15% from Q3)
+- New customers: 47
+- Customer retention: 94%
+- Top performing product: Commercial Auto (38% of revenue)
 
-# After reviewing the plan, execute
-> (Shift+Tab to exit plan mode)
-"Execute the plan, starting with step 1"</code></pre>
+I need:
+1. An executive summary slide
+2. Key metrics with visual suggestions
+3. Comparison to previous quarters
+4. Talking points for each slide
+5. A conclusion with Q1 goals
+
+Keep the tone professional but accessible.
+Our audience is the leadership team."</code></pre>
+
+                        <div class="callout claude">
+                            <div class="callout-title">&#128221; Pro Tip</div>
+                            <p>Claude can help adapt the same content for different audiences - create one version for executives and another for the full team, each with appropriate level of detail.</p>
+                        </div>
+                    </div>
+
+                    <h2 id="claude-decisions">Market Opportunity Analysis</h2>
+                    <div data-skill="intermediate">
+                        <p>Use AI to analyze market data, identify growth opportunities, and support strategic decisions in commercial trucking insurance.</p>
+
+                        <pre><code>"I need help analyzing market opportunities for expanding our
+commercial trucking insurance coverage. Here's the data I have:
+
+Current portfolio:
+- 60% long-haul trucking
+- 25% regional delivery
+- 15% specialty (dump trucks, tankers)
+
+Market research (I'll share the spreadsheet):
+- State-by-state trucking company growth rates
+- Competitor pricing by region
+- Loss ratios by truck type and operation
+- FMCSA new carrier registrations by month
+
+Can you help me:
+1. Identify the top 5 states with growth potential
+2. Analyze which truck types have the best loss ratios
+3. Find gaps where competitors aren't serving well
+4. Calculate potential premium volume for each opportunity
+5. Create a prioritized recommendation with supporting data
+
+Focus on opportunities that align with our risk appetite
+and current carrier relationships."</code></pre>
+
+                        <div class="callout whale">
+                            <div class="callout-title">&#128200; Strategic Insights</div>
+                            <p>Claude can process large datasets and surface patterns that would take hours to find manually - helping you make data-driven decisions about where to focus growth efforts.</p>
+                        </div>
+                    </div>
+
+                    <h2 id="claude-reports">Automated Report Generation</h2>
+                    <div data-skill="intermediate">
+                        <p>Create recurring reports that pull data and generate insights automatically.</p>
+
+                        <pre><code>"I need to create a daily operations dashboard that:
+
+1. Pulls yesterday's data from our system
+2. Calculates key metrics:
+   - Quotes submitted vs completed
+   - Average processing time
+   - Issues flagged for review
+   - Team productivity by person
+3. Compares to our targets (I'll provide these)
+4. Highlights anything that needs attention
+5. Emails the summary to our ops team at 8 AM
+
+Can you help me set this up? I can provide access to our
+database or export files."</code></pre>
+
+                        <div class="callout whale">
+                            <div class="callout-title">&#128200; Real Results</div>
+                            <p>Automated reports save hours of manual work and ensure leadership always has up-to-date information. Claude can create these reports in formats you're comfortable with - Excel, PDF, or email summaries.</p>
+                        </div>
                     </div>
 
                     <h2 id="claude-tests">Test Case Generation</h2>
@@ -555,6 +644,60 @@ in this file. Include:
 - @returns with type and description
 - @throws for any error conditions
 - @example with realistic usage"</code></pre>
+                    </div>
+
+                    <!-- Developer-Focused Examples -->
+                    <hr style="margin: 40px 0; border: none; border-top: 2px dashed #ddd;">
+                    <h2 style="color: #666;">Developer Examples</h2>
+                    <p style="color: #666; margin-bottom: 20px;">The following examples are for technical users working with code and system development.</p>
+
+                    <h2 id="claude-debugging">Complex Debugging</h2>
+                    <div data-skill="advanced">
+                        <div class="callout warning" style="margin-bottom: 16px;">
+                            <div class="callout-title">&#128161; Developer Example</div>
+                            <p>This debugging workflow demonstrates how Claude Code can assist with complex calculation issues in code.</p>
+                        </div>
+                        <pre><code># Share the bug context
+"We have a bug where renewal premiums are sometimes calculated
+incorrectly for policies with mid-term endorsements.
+
+Here's the relevant code:
+/add src/services/renewal.ts
+/add src/services/endorsement.ts
+
+Here's a failing test case:
+- Original premium: $5,000
+- Endorsement at day 180: +$500 coverage
+- Expected renewal: $5,250
+- Actual renewal: $5,000
+
+Walk me through the calculation step by step and identify
+where it goes wrong."</code></pre>
+                    </div>
+
+                    <h2 id="claude-refactoring">API Refactoring</h2>
+                    <div data-skill="advanced">
+                        <div class="callout warning" style="margin-bottom: 16px;">
+                            <div class="callout-title">&#128161; Developer Example</div>
+                            <p>This refactoring workflow demonstrates how Claude Code's plan mode can guide major architectural changes.</p>
+                        </div>
+                        <pre><code># Plan the refactoring
+> (Shift+Tab for plan mode)
+
+"We need to migrate our quote API from REST to GraphQL.
+Current implementation: /add src/routes/quote.ts
+
+Requirements:
+1. Maintain backward compatibility with existing clients
+2. Add GraphQL schema and resolvers
+3. Implement rate limiting
+4. Add comprehensive logging
+
+Create a migration plan with specific steps."
+
+# After reviewing the plan, execute
+> (Shift+Tab to exit plan mode)
+"Execute the plan, starting with step 1"</code></pre>
                     </div>
                 </div>
 
